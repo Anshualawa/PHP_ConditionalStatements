@@ -18,7 +18,7 @@
         <legend>
             <h2>Check Armstrong Number</h2>
         </legend>
-        <pre>Armstrong Number is :-  0  1  2 153  370  371  407 </pre>
+        <pre>Armstrong Number is :-  0  1  2  3  5  6  7  8  9 153  370  371  407 </pre>
         <form method="post">
             Enter Number <input type="number" name="armstNum">
             <button type="submit">Check</button>
@@ -41,9 +41,15 @@
             echo "<br>";
 
             if ($result == $num) {
-                echo '<h2 style="color:#00b008">'.$num . ' is a Armstrong Number </h2>';
+                echo '<h2 style="color:#00b008">' . $num . ' is a Armstrong Number </h2>';
             } else {
-                echo '<h2 style="color:#ff0000">'.$num . ' is not a Armstrong Number </h2>';
+                echo '<h2 style="color:#ff0000">' . $num . ' is not a Armstrong Number </h2>';
+            }
+
+            function MyFun(&$h)
+            {
+                $num1 = 56;
+                $h=8;
             }
 
             ?>
